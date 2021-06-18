@@ -1,0 +1,36 @@
+/* main page slider animations */
+.slide-01-text h1{
+    animation: textSlide 2s;
+}
+.slide-01-text p{
+    animation: textSlide 4s;
+}
+.slide-01{
+    height: 550px;
+}
+@keyframes textSlide{
+    from{margin-left: -500px;opacity: 0;}
+    to{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* slider wine bottle animation */
+.absolute-image{
+    animation: wineBottle 2s;
+}
+@keyframes wineBottle{
+    from{left:100%; height: 200px;}
+    to{left: 70%;height: 550px;}
+}

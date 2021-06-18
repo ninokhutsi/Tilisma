@@ -1,0 +1,136 @@
+/* slider-01 */
+.slide-01.active{
+   display: block;
+}
+.slide-01{
+    display: none;
+    margin: 0 auto;
+    width: 70%;
+    padding:2%;
+    height: 450px;
+    background-color:black;
+    overflow: hidden;
+}
+.slide-01-text{
+    margin-left: 100px;
+    margin-top: 20px;
+    
+}
+
+.slide-01-text h1{
+    font-family: 'BPG Classic Medium';
+    color:#FF4600 ;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.5;
+   
+}
+.slide-01-text p{
+    width: 400px;
+    font-family: 'BPG Classic Medium';
+    color:white;
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.absolute-image{/* wine bottle image positioning */
+    position: absolute;
+    left: 70%;
+    top: 20%;
+    height: 550px;
+}
+
+
+/* button */
+button{
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid white;
+    padding:10px 30px 10px 10px;
+    font-family: 'BPG Classic Medium';
+    font-size: 18px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 40%;
+    animation: opacityAnimation 2s;
+}
+@keyframes opacityAnimation{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+button::after{
+    content: url(../images/arrow.svg);
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 2px;
+    transition: .5s ease-in-out;
+}
+button:hover::after{
+   margin-left: 50px;
+}
+
+/* slider arrows */
+.slider-arrow-left{
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    left: 7%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.slider-arrow-left::after{
+    position: absolute;
+    content: url(../images/arrowSlider.svg);
+    left: 30%;
+    top: 20%;   
+    transition: 0.5s ease-in-out;
+}
+.slider-arrow-left:hover::after{
+    left: 10%;
+}
+.slider-arrow-right{
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    left: 90%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.slider-arrow-right::after{
+    position: absolute;
+    content: url(../images/arrowSlider.svg);
+    left: 40%;
+    top: 20%;  
+    transform: rotate(180deg); 
+    transition: 0.5s ease-in-out;
+}
+.slider-arrow-right:hover::after{
+    left: 60%;
+}
+.carousel{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 0;
+}
+.carousel-images.active{
+    display: block;
+}
+.carousel-images{
+    margin: 0 auto;
+    margin-top: 150px;    /* display: flex;
+    justify-content: space-between; */
+    display: none;
+}
+
+.carousel-images img{
+    width: 300px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
