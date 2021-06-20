@@ -66,6 +66,9 @@ $(document).ready(function(){
         $("#grapeAnimation").animate({transform: "rotate(-10deg)"})
     })
 
+
+
+    $("#map").contents().find("path").css({ "fill": "red" });
 }) 
 
 
