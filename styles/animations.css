@@ -126,3 +126,14 @@
     from{height:0; width:0;}
     to{height: 400px;width: 30%;}
 }
+
+/* winery */
+.main-container .imagewrapper img{
+    animation: grapeRotation 5s linear;
+
+}
+@keyframes grapeRotation{
+    0%{transform:rotate(0); width: 400px;}
+    50%{transform:rotate(-20deg);}
+    100%{transform: rotate(0); width:600px ;}
+}

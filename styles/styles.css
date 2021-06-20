@@ -346,6 +346,59 @@ footer .decoration-image{
     margin: 0 auto;
     line-height: 2.5;
 }
+
+/* winary */
+.main-container.winery{
+    display: flex;
+    height: 150vh;
+}
+.imagewrapper{
+    width: 600px;
+}
+.main-container .imagewrapper img{
+    width: 600px;
+}
+
+.stanza p{
+    width: 500px;
+    word-wrap: break-word;
+}
+.stanza .dot{
+    margin: 0 50px;
+    width: 30px;
+    height: 30px;
+    background-color: #FF4600;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+.stanza .dot::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    left: 10%;
+    top: 4%;
+}
+.stanza{
+    display: flex;
+    margin: 50px;
+}
+.stanza:nth-child(2){
+    flex-direction: row-reverse;
+    margin-left: 180px;
+}
+
+
+
+
+
+
+
+
+
 @media(max-width:768px){
     .responsive-header-wrapper{
         width: 100%;

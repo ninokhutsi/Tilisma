@@ -61,6 +61,11 @@ $(document).ready(function(){
         $(".dropdown-content").slideUp("slow");
     })
 
+    // winery animation
+    $("#grapeAnimation").hover(function(){
+        $("#grapeAnimation").animate({transform: "rotate(-10deg)"})
+    })
+
 }) 
 
 
