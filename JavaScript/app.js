@@ -15,15 +15,15 @@ $(document).ready(function(){
 
     // change header background color while scrolling
 
-    // $(function(){
-    //     $(window).on("scroll", function(){
-    //         if($(window).scrollTop() > 50) {
-    //             $(".header").addClass("active");
-    //         }else{
-    //             $(".header").removeClass("active");
-    //         }
-    //     })
-    // })
+    $(function(){
+        $(window).on("scroll", function(){
+            if($(window).scrollTop() > 50) {
+                $(".header").addClass("active");
+            }else{
+                $(".header").removeClass("active");
+            }
+        })
+    })
    
     //shape animation on scroll
     //(selector).animate({styles},speed,easing,callback)
@@ -44,6 +44,11 @@ $(document).ready(function(){
             }
         })
     })
+
+    // dropdown toggle
+    $(".dropdown").hover(function(){
+        $(".dropdown-content").slideToggle("slow");
+      });
 
 }) 
 
