@@ -250,8 +250,28 @@ footer .decoration-image{
     top: 22%;
 }
 
-/*  */
-
+/* history */
+.main-container.history img{
+    position: relative;
+    left: 45%;
+    margin-top:-70px ;
+    width: 700px;
+    border-radius: 10px;
+}
+.company-text.text p{
+    margin: 0 auto;
+    line-height: 2.5;
+}
+.company-text{
+    border-radius: 10px;
+    background-color: rgba(54, 54, 54, 0.664);
+    backdrop-filter: blur(25px);
+    height: 500px;
+    padding: 20px 50px;
+    width: 56%;
+    margin-top: -450px;
+    margin-left: 150px;
+}
 @media(max-width:768px){
     .responsive-header-wrapper{
         width: 100%;

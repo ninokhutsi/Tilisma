@@ -44,9 +44,17 @@ $(document).ready(function(){
             }
         })
     })
+    //move image
+    $(function(){
+        $(window).on("scroll", function(){
+            if($(window).scrollTop() > 20){
+                $("#glass").animate({left: "47%", marginTop: "-80px"}, 2000);
+            }
+        })
+    })
 
     // dropdown toggle
-    $(".dropdown").hover(function(){
+    $(".dropdown").mouseenter(function(){
         $(".dropdown-content").slideToggle("slow");
       });
 
