@@ -392,7 +392,35 @@ footer .decoration-image{
 }
 
 
-
+/* viticulture */
+.main-container.viticulture .wrapper{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    width: 90%;
+    margin:0 auto;
+}
+.viticulture .text p{
+    width: 60%;
+    margin: 0 auto;
+    line-height: 2.5;
+}
+.viticulture .wrapper img:nth-child(1){
+    width: 250px;
+    border-radius: 7px;
+    position: relative;
+    opacity: 0.5;
+}
+.viticulture .wrapper img::after{
+    content: '';
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    border: 1px solid white;
+}
 
 
 
