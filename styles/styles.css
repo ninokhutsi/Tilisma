@@ -272,6 +272,36 @@ footer .decoration-image{
     margin-top: -450px;
     margin-left: 150px;
 }
+
+/* company */
+.about-company.text{
+    margin: 0 auto;
+    width: 70%;
+    padding:  20px;
+    margin-top: -60px;
+}
+.about-company.text h2{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    position: relative;
+    
+}
+.about-company.text p{
+    line-height: 2.5;
+}
+.about-company.text h2::after{
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    width: 90px;
+    height: 1px;
+    background-color:#FF4600;
+}
+
 @media(max-width:768px){
     .responsive-header-wrapper{
         width: 100%;
