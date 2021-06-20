@@ -73,7 +73,7 @@
 }
 
 /* company */
-.about-company.text h2::after{
+.text h2::after{
     animation: line 2s;
 }
 @keyframes line{
@@ -111,4 +111,18 @@
 @keyframes after{
     from{left: 0;}
     to{width:80%;}
+}
+
+/* team */
+.square-shape{
+    width: 30%;
+    height: 400px;
+    border: 1px solid white;
+    margin-left: 300px;
+    margin-top: -309px;
+    animation: square 2s linear;
+}
+@keyframes square{
+    from{height:0; width:0;}
+    to{height: 400px;width: 30%;}
 }
