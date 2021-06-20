@@ -55,8 +55,11 @@ $(document).ready(function(){
 
     // dropdown toggle
     $(".dropdown").mouseenter(function(){
-        $(".dropdown-content").slideToggle("slow");
+        $(".dropdown-content").slideDown("slow");
       });
+    $(".dropdown").mouseleave(function(){
+        $(".dropdown-content").slideUp("slow");
+    })
 
 }) 
 
