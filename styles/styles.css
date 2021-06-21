@@ -5,6 +5,9 @@
 .overflow-hidden{
     overflow: hidden;
 }
+p{
+    opacity: 0.8;
+}
 
 
 /* scrollbar */
@@ -484,7 +487,70 @@ footer .decoration-image{
     border-radius: 10px;
 }
 
+/* products */
+/* wines */
+.main-container.products .text h2::after{
+    left: 200px;
+    
+}
+.main-container.products{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
+.main-container.products .text{
+    width: 60%;
+    line-height: 2.5;
+    background-color: black;
+    border-radius: 7px;
+    height: 100%;
+    padding: 150px;
+    padding-top: 0;
+    outline-offset: 40px;
+    outline:1px solid rgba(255, 255, 255, 0.281);
+    position: relative;
+    
+}
+.main-container.products .text img{
+    position: absolute;
+    top: 300px;
+    left: 60%;
+}
+.main-container.products div img{
+    border-radius: 7px;
+}
+
+/* vineyard */
+.main-container.vineyard{
+    padding-left: 10%;
+}
+.main-container.vineyard .text{
+    background-color: rgba(54, 54, 54, 0.664);
+    backdrop-filter: blur(15px);
+    width: 60%;
+    padding: 100px;
+    margin-top: -400px;
+    border-radius: 10px;
+    margin-left: 400px;
+
+}
+/* .main-container.wineinfo .parallax{
+    background-image: url("../images/products/infowine.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    z-index: 9999;
+} */
+.main-container.wineinfo .info-wrapper{
+    background-color: black;
+}
+.main-container.wineinfo .text{
+    width: 50%;
+    background-color:black ;
+    margin-top: 150px;
+}
 
 @media(max-width:768px){
     .responsive-header-wrapper{
