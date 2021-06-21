@@ -54,24 +54,23 @@ $(document).ready(function(){
     })
 
     // dropdown toggle
-    $(".dropdown").mouseenter(function(){
-        $(".dropdown-content").slideDown("slow");
+    $("#dropdownAbout").hover(function(){
+        $("#contentAbout").slideToggle("slow");
       });
-    $(".dropdown").mouseleave(function(){
-        $(".dropdown-content").slideUp("slow");
-    })
+    $(".dropdown#dropdownProduct").hover(function(){
+        $(".dropdown-content#contentProduct").slideToggle("slow");
+      });
+    // $(".dropdown-content").mouseleave(function(){
+    //     $(".dropdown-content").slideUp("slow");
+    // })
 
     // winery animation
     $("#grapeAnimation").hover(function(){
         $("#grapeAnimation").animate({transform: "rotate(-10deg)"})
     })
 
+   //a Tag hover animation
 
-
-    $("#map").contents().find("path").css({ "fill": "red" });
 }) 
 
 
-// $(".slider-arrow-left").on("click", function(e){
-    //     alert("click")
-    // })

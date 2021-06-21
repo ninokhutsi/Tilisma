@@ -1,11 +1,12 @@
-/* private classes */
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
 .overflow-hidden{
     overflow: hidden;
 }
-.main-container{
-    overflow: hidden;
-    width: 100%;
-}
+
+
 /* scrollbar */
 ::-webkit-scrollbar{
     width: 5px;
@@ -49,7 +50,6 @@ header{
     /* es bg colori shesacvlelia da chamoscrollvis dros gashavdeba */
     /* background-color: rgba(0, 0, 0, 0.699); */
     position: fixed;
-    /* border-bottom: white 1px solid; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -87,20 +87,26 @@ ul li{
 
 .dropdown-content{
     display: none;
-    border-top: 2px solid #FF4600;
     position: absolute;
-    background-color: #2A2A2A;
-    border-radius: 5px;
-    margin-top: 15px;
-    padding: 5px;
-    width: 200px;
+    border-radius: 20px;
+    padding-top: 20px;
     
+}
+.dropdown-content li{
+    background-color: #2A2A2A;
+    padding: 5px 20px;
+    width: 250px;
+}
+.dropdown-content li:first-child{
+    border-top: 1px solid #FF4600;
 }
 /* main-container */
 .main-container{
     padding-top: 200px;
     width: 100%;
-    
+    overflow: hidden;
+    width: 100%;
+    min-height: 120vh;
     background-color: white;
     background-image: url(../images/bg.jpg);
 }
@@ -115,7 +121,7 @@ ul li{
 
 .section-about-georgia{
     /* background-image: url(../images/bg.jpg); */
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.438);
     margin: 0 10%;
     margin-top: 200px;
     position: relative; /*for decorative image*/
@@ -419,11 +425,64 @@ footer .decoration-image{
     position: absolute;
     top: 20%;
     left: 0;
-    border: 1px solid white;
+    border: 1px solid white ;
 }
 
+/* degustation */
 
+.main-container.degustation .text{
+    background-color: black;
+    border-radius: 7px;
+    padding: 0 20% 200px 10%;
+    width: 70%;
+    line-height: 2.5;
+    /* border: 1px solid white; */
+    border-left: none;
+    border-bottom: none;
+}
+.main-container.degustation img{
+    border-radius: 5px;
+    position: absolute;
+    top: 140px;
+    left: 70%;
+    outline: 1px solid rgb(255, 255, 255);
+    outline-style: double;
+    outline-offset: 30px;
+}
 
+/* purchase */
+
+.main-container.purchase object{
+    width: 800px;
+}
+.main-container.purchase div{
+    width: 50%;
+    position: relative;
+}
+.main-container.purchase .location{
+    opacity:0.9 ;
+    position: absolute;
+    left: 520px;
+    top: 200px;   
+}
+.main-container.purchase .location:nth-child(2){
+    left: 700px;
+    top: 240px;   
+}
+.main-container.purchase .location:last-child{
+    left: 300px;
+    top: 150px;   
+}
+.main-container.purchase .text{
+    background-color: black;
+    width: 40%;
+    height: 100%;
+    padding: 80px;
+    padding-top: 0;
+    line-height: 2.5;
+    margin-top: 50px;
+    border-radius: 10px;
+}
 
 
 

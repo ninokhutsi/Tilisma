@@ -137,3 +137,28 @@
     50%{transform:rotate(-20deg);}
     100%{transform: rotate(0); width:600px ;}
 }
+/* a tag hover animation */
+a{
+    position: relative;
+    padding-bottom: 7px;
+}
+a::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    height: 1px;
+    background-color: #FF4600;
+    
+}
+a:hover::after{
+    animation: aTag 0.5s linear;
+    width: 50%;
+}
+.logo::after{
+    display: none;
+}
+@keyframes aTag{
+    from{width: 0;}
+    to{width: 50%;}
+}
