@@ -551,7 +551,46 @@ footer .decoration-image{
     background-color:black ;
     margin-top: 150px;
 }
-
+/* contact */
+.contact-wrapper{
+    background-color: black;
+    justify-content: unset;
+    align-items: center;
+}
+.map img{
+    width: 100%;
+}
+.map{
+    position: relative;
+}
+.map .pin{
+    position: absolute;
+    width: 30px;
+    left: 450px;
+    top: 250px;
+    
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contact-info a{
+    padding: 20px;
+}
+.contact-info .shape{
+    width: 500px;
+    height: 10px;
+    border-bottom: 1px solid rgb(255, 81, 0);
+    position: absolute;
+    left: 20px;
+    top: -50px;
+    animation: contact 2s linear
+}
+@keyframes contact{
+    from{width: 0;}
+    to{width: 500px;}
+}
 @media(max-width:768px){
     .responsive-header-wrapper{
         width: 100%;
