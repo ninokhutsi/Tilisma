@@ -1,0 +1,91 @@
+@media(max-width:768px){
+    .responsive-header-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo img{
+        width: 170px;
+    }
+    /* navigation */
+    #navigation-list{
+        overflow-y: scroll;
+        position: absolute;
+        padding-bottom: 200px;
+        width: 100%;
+        top: 70px;
+        left: 100%;
+        background-color: black;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: unset;
+        /* navigation animation */
+        transition:  .5s ease-in-out;
+    }
+    #navigation-list::-webkit-scrollbar{
+        display: none;
+    }
+    ul li{
+        padding: 20px;
+    }
+    /* navigation act */
+    #navigation-list.active{
+
+        left: 0;
+    }
+    
+    .burger{
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height: 40px;
+        margin-top: 3.5%;
+        transition: transform .3s linear;
+
+    }
+       .burger-divider{
+           width: 30px;
+           height: 3px;
+           background-color: white;
+           border-radius: 20px;
+           position: absolute;
+           transform: translate(-50%, -50%);
+           left: 50%;
+           transition: transform .3s linear;
+       }
+       .burger-divider:first-child{
+           position: absolute;
+           top: 30%;
+           transition: width .3s;
+       }
+       .burger-divider:nth-child(2){
+           position: absolute;
+           top: 50%;
+           transition: width .3s;
+       }
+       .burger-divider:nth-child(3){
+           position: absolute;
+           top: 70%;
+           transition:width .3s;
+       }
+       /* ************ burger active ************/
+       .burger.active .burger-divider:first-child{
+           width: 30px;
+           transform: rotate(45deg);
+           margin-top: 15px;
+           transition:  .3s;
+       }
+       .burger.active .burger-divider:nth-child(2){
+           display: none;
+       }
+       .burger.active .burger-divider:nth-child(3){
+        transform: rotate(-45deg);
+        transition:  .3s;
+       }
+    body{
+        max-width: 768px;
+        width: 100%;
+        align-content: center;
+    }
+}
